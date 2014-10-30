@@ -57,7 +57,7 @@ yum install pcre-devel openssl-devel
 ## Apache本体のソースをdownload
 ## 
 wget "http://mirrors.ibiblio.org/apache/httpd/httpd-2.4.10.tar.gz"
-tar zxvf httpd-2.4.10
+tar zxvf httpd-2.4.10.tar.gz
 cd srclib/
 
 ## 
