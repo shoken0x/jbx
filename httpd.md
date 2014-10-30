@@ -56,8 +56,8 @@ yum install pcre-devel openssl-devel
 ## 
 ## Apache本体のソースをdownload
 ## 
-wget "http://mirrors.ibiblio.org/apache//httpd/httpd-2.4.7.tar.gz"
-tar zxvf httpd-2.4.7
+wget "http://mirrors.ibiblio.org/apache/httpd/httpd-2.4.10.tar.gz"
+tar zxvf httpd-2.4.10
 cd srclib/
 
 ## 
@@ -66,18 +66,18 @@ cd srclib/
 ## --with-included-aprオプションをつけてビルドすればよい
 ## 
 
-wget "http://mirror.metrocast.net/apache//apr/apr-1.5.0.tar.gz"
-tar zxvf apr-1.5.0.tar.gz
-mv -i apr-1.5.0 apr
+wget "http://mirror.metrocast.net/apache/apr/apr-1.5.1.tar.gz"
+tar zxvf apr-1.5.1.tar.gz
+mv -i apr-1.5.1 apr
 
-wget "http://mirror.metrocast.net/apache//apr/apr-util-1.5.3.tar.gz"
-tar zxvf apr-util-1.5.3.tar.gz
-mv -i apr-util-1.5.3 apr-util
+wget "http://mirror.metrocast.net/apache/apr/apr-util-1.5.4.tar.gz"
+tar zxvf apr-util-1.5.4.tar.gz
+mv -i apr-util-1.5.4 apr-util
 ```
 
 ```
-cd /usr/local/src/httpd-2.4.7
-./configure --prefix=/usr/local/apache-2.4.7 \
+cd /usr/local/src/httpd-2.4.10
+./configure --prefix=/usr/local/apache-2.4.10 \
             --enable-mpms-shared=all \
             --enable-mods-shared=all \
             --enable-ssl \
