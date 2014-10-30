@@ -1,3 +1,5 @@
+## 認証無し
+
 ### コマンド
 
 ```
@@ -22,3 +24,15 @@ vi /etc/samba/smb.conf
 
 - 全てコメントアウト
 
+## 認証有り
+
+###
+
+1. map to guest = Bad Userのコメントアウト
+
+2. ユーザーを追加
+
+```
+useradd -s /bin/false sambauser
+smbpasswd -a sambauser
+```
