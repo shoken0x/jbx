@@ -91,4 +91,4 @@ make
 make install
 ```
 
-起動ファイルの設定、chkconfigを使ってserviceへの登録など
+起動スクリプトの設定、chkconfigを使ってserviceへの登録など
