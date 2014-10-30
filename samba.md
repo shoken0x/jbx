@@ -4,7 +4,7 @@
 
 ```
 su -
-yum -y install
+yum -y install samba
 mkdir /home/samba
 chown nobody:nobody /home/samba
 chmod 777 /home/samba
