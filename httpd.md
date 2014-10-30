@@ -25,5 +25,22 @@ DocumentRootの設定とindex.htmlの作成
 
 ### BASIC認証
 
+#### パスワードファイルの作成
 
+```
+mkdir /etc/httpd/basic/
+htpasswd -c "/etc/httpd/basic/passwd" fujisaki
+```
 
+#### basic認証の設定
+
+/etc/httpd/conf/httpd.conf
+
+```
+<Directory "/usr/share/httpd/fujisaki/basic">
+    AuthType Basic
+    AuthName "ユーザー名とパスワードを入力して下さい"
+    AuthUserFile "/etc/httpd/basic/passwd"
+    Require valid-user
+</Directory>
+```
