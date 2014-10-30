@@ -58,7 +58,7 @@ yum install pcre-devel openssl-devel
 ## 
 wget "http://mirrors.ibiblio.org/apache/httpd/httpd-2.4.10.tar.gz"
 tar zxvf httpd-2.4.10.tar.gz
-cd srclib/
+cd httpd-2.4.10/srclib/
 
 ## 
 ## Apache2.4のSource Installでは、apr, apr-utilをそれぞれ別途ソースをダウンロード・インストールする必要があるが、
