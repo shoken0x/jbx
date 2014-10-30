@@ -3,7 +3,10 @@
 
 ## 0. OSのインストール
 
-CentOS 6.5 をminimalでインストールする
+- CentOS 6.5 をminimalでインストールする
+- ネットワークの設定
+- SELinuxをオフ
+
 
 ## 1. httpd
 
