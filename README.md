@@ -44,11 +44,16 @@
 
 #### アドバンス
 
+- 下記URLのデータを作成してください。ただし、suffixは"dc=jbcc,dc=jp"とすること。
+- http://www.unix-power.net/linux/img/openldap1.jpg 
 
 ## 4. samba
 
 #### ベーシック
 
-- Windowsから共有ファイルが確認できること。
+- Windowsから、認証無しで共有ファイルが確認できること。
 
 #### アドバンス
+
+- Linuxユーザーの認証ありのファイル共有
+- SWATのインストールと確認
