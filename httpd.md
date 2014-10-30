@@ -51,7 +51,7 @@ htpasswd -c "/etc/httpd/basic/passwd" fujisaki
 ## 
 ## 依存パッケージをインストール
 ## 
-yum install pcre-devel openssl-devel
+yum -y install openssl-devel gcc make pcre pcre-devel wget
 
 ## 
 ## Apache本体のソースをdownload
