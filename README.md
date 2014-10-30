@@ -7,8 +7,10 @@
 - ネットワークの設定
  - /etc/resolv.confの設定
  - /etc/sysconfig/network-scripts/ifcfg-eth0の設定
+ - /etc/sysconfig/network でDefault GATEWAYの設定
  - /etc/hostsの設定（必要ならば）
 - SELinuxをオフ
+- iptablesの編集（もしくはストップ）
 
 
 ## 1. httpd
@@ -58,3 +60,7 @@
 
 - Linuxユーザーの認証ありのファイル共有
 - SWATのインストールと確認
+
+## 5. 終わった人用
+
+- Apach httpdをソースからコンパイルしてビルド。81ポートで起動させる。
