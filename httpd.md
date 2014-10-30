@@ -58,7 +58,7 @@ htpasswd -c "/etc/httpd/basic/passwd" fujisaki
 ## 
 ## 依存パッケージをインストール
 ## 
-yum -y install openssl-devel gcc make pcre pcre-devel wget
+yum -y install openssl-devel gcc make pcre pcre-devel wget lynx
 
 ## 
 ## Apache本体のソースをdownload
@@ -104,6 +104,14 @@ make install
 
 ```
 /usr/local/apache-2.4.10/bin/apachectl -v
+```
+
+#### 設定ファイル変更
+
+コメントアウトを外す
+
+```
+LoadModule slotmem_shm_module modules/mod_slotmem_shm.so
 ```
 
 #### 後の設定
