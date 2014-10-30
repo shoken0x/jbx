@@ -44,3 +44,51 @@ htpasswd -c "/etc/httpd/basic/passwd" fujisaki
     Require valid-user
 </Directory>
 ```
+
+### ソースからビルド
+
+```
+## 
+## 依存パッケージをインストール
+## 
+yum install pcre-devel openssl-devel
+
+## 
+## Apache本体のソースをdownload
+## 
+wget "http://mirrors.ibiblio.org/apache//httpd/httpd-2.4.7.tar.gz"
+tar zxvf httpd-2.4.7
+cd srclib/
+
+## 
+## Apache2.4のSource Installでは、apr, apr-utilをそれぞれ別途ソースをダウンロード・インストールする必要があるが、
+## それぞれダウンロードしてapr, apr-utilという名前で展開したものをsrclib下に移動して、
+## --with-included-aprオプションをつけてビルドすればよい
+## 
+
+wget "http://mirror.metrocast.net/apache//apr/apr-1.5.0.tar.gz"
+tar zxvf apr-1.5.0.tar.gz
+mv -i apr-1.5.0 apr
+
+wget "http://mirror.metrocast.net/apache//apr/apr-util-1.5.3.tar.gz"
+tar zxvf apr-util-1.5.3.tar.gz
+mv -i apr-util-1.5.3 apr-util
+```
+
+```
+cd /usr/local/src/httpd-2.4.7
+./configure --prefix=/usr/local/apache-2.4.7 \
+            --enable-mpms-shared=all \
+            --enable-mods-shared=all \
+            --enable-ssl \
+            --enable-proxy \
+            --enable-cache \
+            --enable-mem-cache \
+            --enable-rewrite \
+            --with-included-apr
+
+make
+make install
+```
+
+起動ファイルの設定、chkconfigを使ってserviceへの登録など
