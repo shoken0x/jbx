@@ -10,6 +10,7 @@
  - /etc/sysconfig/network でDefault GATEWAYの設定
  - /etc/hostsの設定（必要ならば）
 - SELinuxをオフ
+- iptablesの編集（もしくはストップ）
 
 
 ## 1. httpd
