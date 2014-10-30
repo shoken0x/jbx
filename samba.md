@@ -33,6 +33,6 @@ vi /etc/samba/smb.conf
 2. ユーザーを追加
 
 ```
-useradd -s /bin/false sambauser
-smbpasswd -a sambauser
+useradd -s /bin/false smbuser
+smbpasswd -a smbuser
 ```
