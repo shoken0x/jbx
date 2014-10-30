@@ -7,7 +7,7 @@
 - ネットワークの設定
  - /etc/resolv.confの設定
  - /etc/sysconfig/network-scripts/ifcfg-eth0の設定
- - /etc/hostsの設定
+ - /etc/hostsの設定（必要ならば）
 - SELinuxをオフ
 
 
