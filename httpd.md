@@ -93,4 +93,12 @@ make
 make install
 ```
 
+バージョン確認
+
+```
+/usr/local/apache-2.4.10/bin/apachectl -v
+```
+
+#### 後の設定
+
 起動スクリプトの設定、chkconfigを使ってserviceへの登録など
