@@ -23,6 +23,13 @@ SSLCertificateKeyFile /etc/httpd/conf/ssl/server.key
 
 DocumentRootの設定とindex.htmlの作成
 
+#### confファイルのテスト
+
+```
+apachectl configtest
+```
+
+
 ### BASIC認証
 
 #### パスワードファイルの作成
