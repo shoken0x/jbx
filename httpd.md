@@ -12,3 +12,8 @@ ssl.conf
 SSLCertificateFile /etc/httpd/conf/ssl.crt/server.crt
 SSLCertificateKeyFile /etc/httpd/conf/ssl.key/server.key 
 ```
+
+### BASIC認証
+
+
+
