@@ -5,6 +5,9 @@
 
 - CentOS 6.5 をminimalでインストールする
 - ネットワークの設定
+ - /etc/resolv.confの設定
+ - /etc/sysconfig/network-scripts/ifcfg-eth0の設定
+ - /etc/hostsの設定
 - SELinuxをオフ
 
 
