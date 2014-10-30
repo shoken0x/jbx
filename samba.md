@@ -1,4 +1,6 @@
 ### コマンド
+
+```
 su -
 yum -y install
 mkdir /home/samba
@@ -6,6 +8,8 @@ chown nobody:nobody /home/samba
 chmod 777 /home/samba
 vi /etc/samba/smb.conf
 /etc/init.d/smb start
+```
+
 
 ### smb.confの変更箇所
 
