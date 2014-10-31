@@ -51,6 +51,14 @@ yum -y install mailx
 - Linuxのrootユーザーにメールを送信する。
 - mailコマンドを使って、受信していることの確認。
 
+/etc/hosts
+
+```
+127.0.0.1 jbcc.jp localhost...
+192.168.xxx.xxx jbcc.jp
+```
+
+
 ## 3. LDAP
 
 #### ベーシック
