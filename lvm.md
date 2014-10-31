@@ -129,23 +129,11 @@ Units = シリンダ数 of xxxxx * xxx = xxxxxxx bytes
 100%FREEを指定することで、全VGをLVにあてることができる。
 
 ```
-# lvcreate -n LvData01 -l 100%FREE VgData01
+# lvcreate -L 100M -n Lg01 VgData01
   Logical volume "LvData01" created
 # lvdisplay
   --- Logical volume ---
-  LV Name                /dev/VgData01/LvData01
-  VG Name                VgData01
-  LV UUID                xxxxxx-xxxx-xxxx-xxxx-xxxx-xxxx-xxxxxx
-  LV Write Access        read/write
-  LV Status              available
-  # open                 1
-  LV Size                x.xx TB
-  Current LE             xxxxxx
-  Segments               2
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:0
+...
 ```
 
 ### ファイルシステム構築
