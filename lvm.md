@@ -169,13 +169,3 @@ Writing superblocks and filesystem accounting information: done
 ```
 # mount -t ext3 /dev/VgData01/LvData01 /lvmdata
 ```
-
-reboot時にマウントされるよう設定(オプション)
-
-```
-# e2label /dev/VgData01/LvData01 /lvmdata
-# vi /etc/fstab
----
-LABEL=/lvmdata            /lvmdata ext3    defaults 1 2
----
-```
