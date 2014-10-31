@@ -58,6 +58,12 @@ yum -y install mailx
 192.168.xxx.xxx jbcc.jp
 ```
 
+hostnameの変更
+
+```
+hostname jbcc.jp
+```
+
 
 ## 3. LDAP
 
