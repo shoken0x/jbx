@@ -27,7 +27,7 @@
 
 3. ログの確認。エラーが出ていないか。
 
-4. topコマンド、vmstatコマンドでCPUの負荷状態を確認。
+4. topコマンド、vmstatコマンドでCPUの負荷状態とDiskI/Oを確認。
 
 5. netstatコマンドでLISTENしているかどうかの確認。
 
