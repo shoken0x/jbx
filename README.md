@@ -5,9 +5,9 @@
 
 - CentOS 6.5 をminimalでインストールする
 - ネットワークの設定
- - /etc/resolv.confの設定
  - /etc/sysconfig/network-scripts/ifcfg-eth0の設定
  - /etc/sysconfig/network でDefault GATEWAYの設定
+ - /etc/resolv.confの設定
  - /etc/hostsの設定（必要ならば）
 - SELinuxをオフ
 - iptablesの編集（もしくはストップ）
@@ -18,6 +18,12 @@
 #### ベーシック
 
 - ブラウザから80ポートにアクセスして、Apache httpdサーバーの画面が確認できること
+
+```
+yum -y install httpd
+service httpd start
+```
+
 - Nameベースのバーチャルホスト設定ができること。設定したFQDNで、違う画面が出ることの確認。
 
 #### アドバンス
