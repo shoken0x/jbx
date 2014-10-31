@@ -12,6 +12,8 @@
 - SELinuxをオフ
 - iptablesの編集（もしくはストップ）
 
+手順はこちら  
+https://github.com/syokenz/jbx/blob/master/initial.md
 
 ## 1. httpd
 
