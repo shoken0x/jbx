@@ -39,7 +39,7 @@ service httpd start
 
 #### ベーシック
 
-- telnetを使ったメール送信。/var/log/maillogでログが出力されることの確認。
+- メール送信の確認。tail -f /var/log/maillogでログが出力されることの確認。
 
 ```
 yum -y install postfix
