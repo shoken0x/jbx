@@ -92,7 +92,12 @@ Units = シリンダ数 of xxxxx * xxx = xxxxxxx bytes
   Free PE               0
   Allocated PE          xxxxxx
   PV UUID               xxxxxx-xxxx-xxxx-xxxx-xxxx-xxxx-xxxxxx
-VG(Volume Group、ボリュームグループ)を作成
+```
+
+### VG(Volume Group、ボリュームグループ)を作成
+
+
+```
 # vgcreate VgData01 /dev/sdb1 /dev/sdc1
   Volume group "VgData01" successfully created
 # vgdisplay
