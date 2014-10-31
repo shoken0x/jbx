@@ -129,8 +129,8 @@ Units = シリンダ数 of xxxxx * xxx = xxxxxxx bytes
 100%FREEを指定することで、全VGをLVにあてることができる。
 
 ```
-# lvcreate -L 100M -n Lg01 VgData01
-  Logical volume "Lg01" created
+# lvcreate -L 100M -n LvData01 VgData01
+  Logical volume "LvData01" created
 # lvdisplay
   --- Logical volume ---
 ...
