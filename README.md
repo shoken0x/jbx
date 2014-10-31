@@ -64,7 +64,7 @@ hostnameの変更
 hostname jbcc.jp
 ```
 
-/etc/sysconfig/networkのhostnameの変更
+/etc/sysconfig/networkのhostnameの変更  
 参考: https://github.com/syokenz/jbx/blob/master/initial.md
 
 ## 3. LDAP
