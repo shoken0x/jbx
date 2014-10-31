@@ -130,7 +130,7 @@ Units = シリンダ数 of xxxxx * xxx = xxxxxxx bytes
 
 ```
 # lvcreate -L 100M -n Lg01 VgData01
-  Logical volume "LvData01" created
+  Logical volume "Lg01" created
 # lvdisplay
   --- Logical volume ---
 ...
