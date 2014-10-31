@@ -41,6 +41,11 @@ service httpd start
 
 - telnetを使ったメール送信。/var/log/maillogでログが出力されることの確認。
 
+```
+yum -y install postfix
+yum -y install mailx
+```
+
 #### アドバンス
 
 - Linuxのrootユーザーにメールを送信する。
